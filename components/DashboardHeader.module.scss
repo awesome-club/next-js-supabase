@@ -1,0 +1,10 @@
+@import "../styles/vars.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: $maxWidth;
+  padding: 15px 0;
+  margin: 0 auto;
+}

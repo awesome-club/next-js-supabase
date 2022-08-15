@@ -1,0 +1,102 @@
+@import "../styles/vars.scss";
+
+.project {
+  margin-top: $margin;
+  & > header {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 20px;
+    border-radius: 25px;
+    font-family: $fontFamily;
+    background: #b2d099;
+
+    h3 {
+      margin: 0;
+      font-weight: 600;
+      color: #FFF;
+      font-size: 18px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    }
+  }
+}
+
+.nav {
+  margin-left: auto;
+  display: flex;
+}
+
+.menu {
+  border-radius: 8px;
+  width: 125px;
+  padding: $margin / 3;
+}
+
+.dropdown,
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #FFF;
+  cursor: pointer;
+  transition: .25s all;
+  background: none;
+  border: 0;
+
+  &:hover {
+    background: rgba(0, 0, 0, .1);
+    color: #FFF;
+  }
+}
+
+.button {
+  span {
+    font-size: 12px;
+    line-height: 10px;
+  }
+}
+
+.dropdown {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  transform: rotate(90deg);
+}
+
+.colors {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+
+.ops {
+  margin: 10px 0 0;
+  border-top: 1px solid #F2F2F2;
+  padding: 10px 5px 5px;
+  list-style-type: none;
+  display: flex;
+
+  li:last-child {
+    margin-left: auto;
+  }
+}
+
+.tasks {
+  margin: 0;
+  padding: 0 15px;
+  list-style-type: none;
+}

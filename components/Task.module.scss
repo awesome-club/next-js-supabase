@@ -1,0 +1,45 @@
+@import "../styles/vars.scss";
+
+.task {
+  margin-top: 10px;
+  background: #FFF;
+  border-radius: 6px;
+  padding: $margin / 3;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 3%);
+
+  img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  & > footer {
+    display: flex;
+    margin-top:  $margin / 2;
+    padding: 0 5px 5px 5px;
+
+    button:nth-child(2) {
+      margin: 0 $margin / 2 0 auto;
+    }
+  }
+
+  input, textarea {
+    border-color: #FFF !important;
+    box-shadow: none !important;
+    border-radius: 4px;
+    transition: all .25s;
+
+    &:focus {
+      background: #F8F8F8;
+    }
+  }
+
+  input {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  textarea {
+    font-size: 12px;
+    min-height: 10px;
+  }
+}

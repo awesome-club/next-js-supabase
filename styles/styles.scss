@@ -1,0 +1,81 @@
+@import "vars";
+
+body {
+  margin: 0;
+}
+
+.dashboard {
+  background: #F8F8F8;
+  font-family: $fontFamily;
+  min-height: 100vh;
+}
+
+.ant-btn {
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+}
+
+.auth {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .npt {
+    display: flex;
+  }
+
+  input {
+    border: 2px solid $primary;
+    border-right: 0;
+    border-radius: 10px 0 0 10px;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 275px;
+    height: 60px;
+    outline: 0;
+    font-family: $fontFamily;
+  }
+
+  button {
+    height: 60px;
+    width: 120px;
+    border-radius: 0 10px 10px 0 !important;
+    font-weight: 600;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 2em;
+    color: #666;
+  }
+}
+
+.projects {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 $margin;
+  list-style-type: none;
+}
+
+.new-project {
+  margin-top: $margin;
+  border: 2px solid #EEE;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  background: none;
+  box-shadow: none;
+  text-align: left;
+  color: #666;
+}
+
+.ant-upload-list.ant-upload-list-text {
+  display: none;
+}
